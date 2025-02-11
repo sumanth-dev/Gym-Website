@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+       
+
+        /* Header Styling */
+        header {
+            background: linear-gradient(90deg, #ff8a00, #e52e71);
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        header nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        header nav a:hover {
+            background: #ff5e62;
+            transform: scale(1.1);
+        }
+        
+
+        /* Hero Section */
+        .hero {
+            /* background: url('https://res.cloudinary.com/demxptgah/image/upload/v1734017959/daniel-apodaca-WdoQio6HPVA-unsplash_rcstvl.jpg') no-repeat center center/cover; */
+            color: #fff;
+            height: 550px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+           
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 18px;
+            max-width: 600px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            background: #ff5e62;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: background 0.3s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            background: #ff8a00;
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section:nth-child(even) {
+            background: #f9f9f9;
+        }
+
+        section h2 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        section p {
+            font-size: 18px;
+            color: #666;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        /* Services Grid */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .services .card {
+            padding: 20px;
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .services .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .services img {
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 15px;
+        }
+
+        .services h3 {
+            color: #ff5e62;
+            margin-bottom: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(90deg, #e52e71, #ff8a00);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">GymX</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+
+    <section id="home" class="hero">
+        <h1>WELCOME TO SUMANTH GymX</h1>
+        <p>Your ultimate destination for fitness, health, and well-being. Explore our services and achieve your fitness goals with ease!</p>
+        <img src="https://res.cloudinary.com/demxptgah/image/upload/v1734017959/daniel-apodaca-WdoQio6HPVA-unsplash_rcstvl.jpg" alt="Gym Equipment" style="max-width: 40%; border-radius: 20px; margin-top: 20px;">
+        <a href="#services" class="btn">Explore Services</a>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At GymX, we offer top-quality fitness solutions tailored to your needs. Whether you're a beginner or an experienced athlete, our facilities, trainers, and programs are here to help you achieve your goals.</p>
+        <img src="https://res.cloudinary.com/demxptgah/image/upload/v1734275280/gym3_wfjzyr.webp" alt="Gym Equipment" style="max-width: 100%; border-radius: 20px; margin-top: 20px;">
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="card">
+                <img src="https://res.cloudinary.com/demxptgah/image/upload/v1734275466/gym4_nhtuvg.jpg" alt="Personal Training">
+                <h3>Personal Training</h3>
+                <p>Work with certified trainers who guide you step-by-step with customized workout plans.</p>
+            </div>
+            <div class="card">
+                <img src="https://res.cloudinary.com/demxptgah/image/upload/v1734275568/gym5_p9bnr0.jpg" alt="Group Classes">
+                <h3>Group Classes</h3>
+                <p>Join exciting group sessions like yoga, Zumba, and cardio dance to stay motivated.</p>
+            </div>
+            <div class="card">
+                <img src="https://res.cloudinary.com/demxptgah/image/upload/v1734275655/gym6_ui3l4z.avif" alt="Modern Equipment">
+                <h3>Modern Equipment</h3>
+                <p>Access our state-of-the-art machines for strength, cardio, and functional training.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: jalagamsumanth24@gmail.com</p>
+        <p>Phone: +91 7989136320</p>
+        <p>Visit us: Gandhi statue, Suryapet City</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 GymX. Designed to inspire fitness. All rights reserved.</p>
+    </footer>
+</body>
+</html>
